@@ -14,8 +14,8 @@ export const Navbar = () => {
           </div>
           <ul>
             <li><Link to="/" className='links'>Home</Link></li>
-            <li><Link to="/About" className='links'>About</Link></li>
-            <li><Link to="/Contact" className='links'>Contact</Link></li>
+            <li><Link to="/About" className='links'></Link></li>
+            <li><Link to="/Contact" className='links'></Link></li>
           </ul>
 
           <div className='cart-and-heart'>
