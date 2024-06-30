@@ -1,0 +1,72 @@
+.item-count{
+    display: flex;
+    gap: 10px;
+}
+.item-count button{
+    width: 50px;
+    border: 1px solid var(--color-seis);
+    background-color: var(--color-seis);
+    color: var(--color-dos);
+    cursor: pointer;
+}
+
+.butto-add-cart{
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.butto-add-cart .agregar-al-carrito {
+    --color: var(--color-uno);
+    padding: 0.5em 6em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+   
+   .agregar-al-carrito::before, .button::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -2;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   .agregar-al-carrito::before {
+    top: -1.2em;
+    left: -1em;
+   }
+   
+   .agregar-al-carrito::after {
+    left: calc(100% + 2em);
+    top: calc(100% + 2em);
+   }
+   
+   .agregar-al-carrito:hover::before, .agregar-al-carrito:hover::after {
+    height: 710px;
+    width: 710px;
+   }
+   
+   .agregar-al-carrito:hover {
+    color: #ffffffff;
+   }
+   
+   .agregar-al-carrito:active {
+    filter: brightness(.8);
+   }
+   
+   

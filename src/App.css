@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-family: var(--family-Noto-Sans);
+    scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+:root{
+    --color-uno: #e0afa0;
+    --color-dos: #f4f3ee;
+    --color-tres: #bcb8b1;
+    --color-cuatro: #8a817c;
+    --color-cinco: #463f3a;
+    --color-seis: #333333;
+
+
+    --family-Noto-Sans:"Noto Sans", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-block: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.formulario input {
+    padding: .5rem;
+    width: 18rem;
+    border-radius: .5rem;
+    border: 2px solid black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formulario input:focus {
+    outline: 0;
+    border: 2px solid var(--clr-main);
+    outline: 2px solid var(--clr-main);
 }
